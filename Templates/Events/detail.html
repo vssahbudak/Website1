@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-3">
+            <img src="{% static event.get_image_path %}" alt="" class="card-img">
+        </div>
+        <div class="col-md-9">
+            <h1>{{ event.name }}</h1>
+            <hr>
+            <p>{{ event.description}}</p>
+        </div>
+    </div>
+{% endblock %}
